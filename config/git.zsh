@@ -7,6 +7,7 @@ dateColor=${gitDateColor:-"yellow"}
 authorColor=${gitAuthorColor:-"blue"}
 
 alias gco='git checkout'
+alias gc='git clone'
 alias gpo='git push origin $(git symbolic-ref --short -q HEAD)'
 alias gpl='git pull origin $(git symbolic-ref --short -q HEAD) --ff-only'
 alias gd='git --no-pager diff'
