@@ -7,3 +7,4 @@ source $OMZ/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $OMZ/plugins/vi-mode/vi-mode.plugin.zsh
 source $OMZ/plugins/sudo/sudo.plugin.zsh
 source $OMZ/plugins/command-not-found/command-not-found.plugin.zsh
+source $OMZ/plugins/hitokoto/hitokoto.plugin.zsh
