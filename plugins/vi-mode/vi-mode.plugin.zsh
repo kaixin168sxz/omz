@@ -99,23 +99,23 @@ function zle-line-finish() {
 }
 zle -N zle-line-finish
 
-# function _normal-mode() {
-#   typeset -g VI_KEYMAP=vicmd
-#   RPS1='$(vi_mode_prompt_info)'
-#   zle reset-prompt
-#   zle -R
-#   _vi-mode-set-cursor-shape-for-keymap "${VI_KEYMAP}"
-#   zle .normal-mode
-# }
-# zle -N normal-mode _normal-mode
-#
+function _normal-mode() {
+  typeset -g VI_KEYMAP=vicmd
+  RPS1='$(vi_mode_prompt_info)'
+  zle reset-prompt
+  zle -R
+  _vi-mode-set-cursor-shape-for-keymap "${VI_KEYMAP}"
+  zle .vi-cmd-mode
+}
+zle -N normal-mode _normal-mode
+
 bindkey -v
 
 # allow vv to edit the command line (standard behaviour)
 autoload -Uz edit-command-line
 zle -N edit-command-line
 bindkey -M vicmd 'vv' edit-command-line
-# bindkey -M viins 'jk' normal-mode
+bindkey -M viins 'jk' normal-mode
 
 # allow ctrl-p, ctrl-n for navigate history (standard behaviour)
 bindkey '^P' up-history
