@@ -27,8 +27,8 @@ fork自yaocccc的omz，添加了常用插件
 - `extract` 或 `x` 命令解压任意格式压缩文件
 - 选择性开启hook，可实现新开终端自动进入最后进入的目录 `export _OMZ_APPLY_CHPWD_HOOK=true`
 - 常用git快捷命令集成
-- vi-mode自定义提示符，已经将jk映射为<Esc>
-- 双击<Esc>自动添加/删除```sudo```
+- vi-mode自定义提示符，已经将```jk```映射为```<Esc>```
+- 双击```<Esc>```自动添加/删除```sudo```
 
 ## USAGE
 
@@ -158,9 +158,9 @@ _OMZ_APPLY_HISTORYBYFZF
 
 7. vi-mode
 8. command-not-found
-  在archlinux上运行:
-  ```sudo pacman -S pkgfile```
-  ```sudo pkgfile -u```
+  > 在archlinux上运行:
+  > ```sudo pacman -S pkgfile```
+  > ```sudo pkgfile -u```
 9. sudo
 
 ## 贡献者
@@ -168,9 +168,3 @@ _OMZ_APPLY_HISTORYBYFZF
 - [yaocccc](https://github.com/YichaoDeng)
 - [YichaoDeng](https://github.com/YichaoDeng)
   - [PR#1 更新gitlog的format格式](https://github.com/yaocccc/omz/pull/1)
-
-## Support: buy yaocccc a coffee
-
-<a href="#TOP" target="_blank">
-  <img src="https://github.com/yaocccc/yaocccc/raw/master/qr.png">
-</a>
