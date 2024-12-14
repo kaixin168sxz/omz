@@ -158,9 +158,9 @@ _OMZ_APPLY_HISTORYBYFZF
 
 7. vi-mode
 8. command-not-found
-  > 在archlinux上运行:
-  > ```sudo pacman -S pkgfile```
-  > ```sudo pkgfile -u```
+   > 在archlinux上运行:
+   > ```sudo pacman -S pkgfile```
+   > ```sudo pkgfile -u```
 9. sudo
 
 ## 贡献者
