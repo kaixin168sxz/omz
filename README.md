@@ -9,13 +9,12 @@
   * [CONFIGURATION](#configuration)
   * [PLUGINS](#plugins)
   * [贡献者](#贡献者)
-  * [Support: buy me a coffee](#support-buy-me-a-coffee)
+  * [Support: buy yaocccc a coffee](#support-buy-me-a-coffee)
 
 <!-- markdown-toc -->
 
 # o╦╗
-
-fork自 oh my zsh，更纯净 更快速
+fork自yaocccc的omz，添加了常用插件
 
 ![avatar](./screenshots/show.gif)
 
@@ -23,11 +22,13 @@ fork自 oh my zsh，更纯净 更快速
 
 - 快速跳转到目录 `z dirname` 可用tab补全
 - fzf-tab支持 使用fzf取代原生tab候选、预览
-- 输入命令过程中展示最近使用同开头的命令 右键采用
+- 输入命令过程中展示最近使用同开头的命令 键盘右箭头采用
 - 高亮输入命令 绿色正确 红色错误
 - `extract` 或 `x` 命令解压任意格式压缩文件
 - 选择性开启hook，可实现新开终端自动进入最后进入的目录 `export _OMZ_APPLY_CHPWD_HOOK=true`
 - 常用git快捷命令集成
+- vi-mode自定义提示符，已经将jk映射为<Esc>
+- 双击<Esc>自动添加/删除```sudo```
 
 ## USAGE
 
@@ -75,6 +76,7 @@ omz
 - bat (可选 更好的文本预览效果)
 - exa (可选 更好的目录预览效果)
 - ueberzug (可选 可在x11终端下预览图片)
+- pkgfile (可选 命令找不到时提示安装用的数据库)
 
 ```plaintext
   请自行安装fd
@@ -152,7 +154,14 @@ _OMZ_APPLY_HISTORYBYFZF
     >> |\  
     >> | * 3f2441b 2022-12-13 19:01 user1: fix: 修复安全隐患
     >> |/  
-    >> \*   70a46da 2022-12-13 18:27 user2: Merge branch 'fix/abcd' into 'master'  
+    >> \*   70a46da 2022-12-13 18:27 user2: Merge branch 'fix/abcd' into 'master'
+
+7. vi-mode
+8. command-not-found
+  在archlinux上运行:
+  ```sudo pacman -S pkgfile```
+  ```sudo pkgfile -u```
+9. sudo
 
 ## 贡献者
 
@@ -160,7 +169,7 @@ _OMZ_APPLY_HISTORYBYFZF
 - [YichaoDeng](https://github.com/YichaoDeng)
   - [PR#1 更新gitlog的format格式](https://github.com/yaocccc/omz/pull/1)
 
-## Support: buy me a coffee
+## Support: buy yaocccc a coffee
 
 <a href="#TOP" target="_blank">
   <img src="https://github.com/yaocccc/yaocccc/raw/master/qr.png">
