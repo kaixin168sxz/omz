@@ -159,12 +159,17 @@ _OMZ_APPLY_HISTORYBYFZF
     > 基本vi快捷键
     > 使用```jk```或```<Esc>```来回到NORMAL模式
     > 使用```vv```在默认编辑器($EDITOR)中编辑
+
 8. command-not-found
     > 在archlinux上运行:
     > ```sudo pacman -S pkgfile```
     > ```sudo pkgfile -u```
+
 9. sudo
     > 按两次```<Esc>```在命令开头添加/删除```sudo```
+
+10. hitokoto
+    > 没什么用，输出一些句子
 
 ## 贡献者
 
