@@ -16,7 +16,7 @@
 # o╦╗
 fork自yaocccc的omz，添加了常用插件
 
-![avatar](./screenshots/show.gif)
+![avatar](./screenshots/show.png)
 
 # FUTURES
 
@@ -34,7 +34,7 @@ fork自yaocccc的omz，添加了常用插件
 
 ```shell
   # 找一个地方clone本仓库 例如 ~/.config
-  git clone https://github.com/yaocccc/omz ~/.config/omz
+  git clone https://github.com/kaixin168sxz/omz.git ~/.config/omz
 
   # 在你的zsh配置里 source ~/.config/omz/omz.zsh (举例)
   echo "source ~/.config/omz/omz.zsh" >> ~/.zshrc
@@ -157,11 +157,15 @@ _OMZ_APPLY_HISTORYBYFZF
     >> \*   70a46da 2022-12-13 18:27 user2: Merge branch 'fix/abcd' into 'master'
 
 7. vi-mode
+    > 基本vi快捷键
+    > 使用```jk```或```<Esc>```来回到NORMAL模式
+    > 使用```vv```在默认编辑器($EDITOR)中编辑
 8. command-not-found
-   > 在archlinux上运行:
-   > ```sudo pacman -S pkgfile```
-   > ```sudo pkgfile -u```
+    > 在archlinux上运行:
+    > ```sudo pacman -S pkgfile```
+    > ```sudo pkgfile -u```
 9. sudo
+    > 按两次```<Esc>```在命令开头添加/删除```sudo```
 
 ## 贡献者
 
