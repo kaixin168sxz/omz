@@ -19,7 +19,9 @@ function finalise {
         rm "${UEBERZUG_FIFO}"
     &>/dev/null \
         kill $(jobs -p)
-    killall ueberzug
+    while ps -a | grep -q ueberzug; do
+        killall ueberzug
+    done
 }
 
 function draw_preview {
